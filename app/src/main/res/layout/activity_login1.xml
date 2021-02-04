@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context=".Login1"
+    android:gravity="center">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#2B2929"
+            android:textColor="#ff0000"
+            android:gravity="center"
+            android:text="for Initially\n password = User and mob no. = 1999 888 777"
+            android:textSize="17dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#2B2929"
+            android:textColor="#2B2929"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile No."
+                android:inputType="numberDecimal"
+                android:textColor="#2B2929"
+                android:textColorHint="#2B2929"
+                android:textSize="17dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#2B2929"
+            android:textColor="#2B2929"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/etPassword123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#2B2929"
+                android:textColor="#2B2929"
+                android:textSize="17dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btnLoginl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="#ff0000"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

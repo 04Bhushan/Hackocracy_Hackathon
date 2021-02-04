@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">For \u0026 Folk</string>
+    <string-array name="works_of_labours">
+        <item>Search Work Here</item>
+        <item>Anganwadi Workers</item>
+        <item>Agarbatti making</item>
+        <item>Agriculture</item>
+        <item>Automobile work</item>
+        <item>Bangle manufacturing</item>
+        <item>Bicycle repair</item>
+        <item>Bindi work</item>
+        <item>Book binding</item>
+        <item>Brush making</item>
+        <item>Building and Road maintenance</item>
+        <item>Barber</item>
+        <item>Bulb manufacture</item>
+        <item>Bullock/Camel-cart operation</item>
+        <item>Cable TV operation</item>
+        <item>Cane/Reed work</item>
+        <item>Carpet weaving</item>
+        <item>Catering</item>
+        <item>Chikan work</item>
+        <item>Cloth printing</item>
+        <item>Coaching service</item>
+        <item>Fire work cracker production</item>
+        <item>Envelop making</item>
+        <item>Fishery production</item>
+        <item>Headload work</item>
+        <item>Newspaper vending</item>
+        <item>Security service</item>
+        <item>Toy making</item>
+        <item>Laundry Work</item>
+        <item>Welding</item>
+        <item>Pickle making</item>
+        <item>Any other similar Occupation</item>
+
+    </string-array>
+    <string name="title_activity_just_recyler_view">JustRecylerViewActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

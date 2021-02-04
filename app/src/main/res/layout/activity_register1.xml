@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:example="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Register1"
+    android:background="#BAB8B9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/leftarrow"
+                        android:id="@+id/back_arrow"
+                        android:layout_marginLeft="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:textStyle="bold"
+                            android:textSize="30dp"
+                            android:fontFamily="cursive"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Personal Details"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/profilePic"
+                    android:src="@drawable/persion"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    example:angle="180"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Upload photo"
+                    android:textColor="#C1BEBE"
+                    android:textSize="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/CV_gallery"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/ripple_on_white">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="From Gallay"
+                                android:textStyle="normal"
+                                android:textColor="#9C0C28"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/CV_Camera"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/ripple_on_white">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Take Photo"
+                                android:textStyle="normal"
+                                android:textColor="#9C0C28"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:paddingTop="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/text_input_layout_1">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ET_name"
+                            android:hint="Enter Name"
+                            android:background="#ffffff"
+                            android:textColor="#534F4F"
+                            android:textColorHint="#7C7878"
+                            android:layout_margin="10dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:paddingTop="5dp"
+                        android:gravity="center"
+                        app:counterMaxLength="10"
+                        android:background="@drawable/text_input_layout_1">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ET_mobile"
+                            android:hint="Enter Mobile No."
+                            android:textColor="#534F4F"
+                            android:background="#ffffff"
+                            android:inputType="numberDecimal"
+                            android:textColorHint="#7C7878"
+                            android:layout_margin="10dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:paddingTop="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/text_input_layout_1">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ET_address"
+                            android:hint="Enter Worded Address"
+                            android:background="#ffffff"
+                            android:textColor="#534F4F"
+                            android:textColorHint="#7C7878"
+                            android:layout_margin="10dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:background="@drawable/ripple_on_white">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="Enter Password"
+                                android:background="#ffffff"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#000000"
+                                android:layout_margin="10dp"
+                                android:textSize="17dp"
+                                android:id="@+id/ET_Password"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="20dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:text="Save"
+                        android:id="@+id/Save_As_reg"
+                        android:textColor="#ffffff"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</LinearLayout>
