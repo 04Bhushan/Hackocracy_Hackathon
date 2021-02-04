@@ -1,4 +1,4 @@
-# Hackocracy_Hackathon
+# Hackocracy_Hackathon_2020
 
 Hackocracy is a Hackathon an event
 organized by CCET ACM Student Chapter in collaboration
